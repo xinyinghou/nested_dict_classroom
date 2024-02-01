@@ -1,9 +1,9 @@
 Practice Problems
 =================
 
-* This exercise consists of four write-code problems with providing **completed code** as help.
+* This exercise includes four write-code problems with help that provided a **correct code solution**.
 
-* These questions include a **"Help"** button under each problem description.
+* The Help can be triggered by clicking the **"Help"** button under each problem description.
 
 * Please answer these problems without any outside help, including AI tools like ChatGPT.
 
@@ -13,7 +13,6 @@ Practice Problems
 .. activecode:: table_reservation_ac
         :autograde: unittest
         :nocodelens:
-        :openaicode:
 
         Finish the function ``table_reservation(reservation_dict, guest_num)`` below:
             - It takes a nested dictionary ``reservation_dict`` representing a restaurant's current reservation situation for a day and a specific number of guests ``guest_num`` as input. 
@@ -92,7 +91,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_1_oc
 
-    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -132,7 +131,7 @@ Practice Problems
 .. activecode:: get_average_score_ac
         :autograde: unittest
         :nocodelens:
-        :openaicode:
+
         
         Finish the function ``get_average_score(student_information)`` below:
             - It takes a dictionary ``student_information`` representing student data, where the keys are student names, and the values are dictionaries containing information about the student, including their age and a list of courses they took and the grade for each course.
@@ -210,7 +209,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_2_oc
 
-    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -251,7 +250,7 @@ Practice Problems
 .. activecode:: get_vegetarian_menu_ac
         :autograde: unittest
         :nocodelens:
-        :openaicode:
+
 
         Finish the function ``get_vegetarian_menu(menu_items):`` below:
             - It takes a list of tuples ``menu_items`` as input, each tuple contains ``(name, category, price, is_vegetarian)``.
@@ -333,8 +332,8 @@ Practice Problems
 
 .. fillintheblank:: reflect_3_oc
 
-    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
-        
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
+            
     .. list-table::
        :align: center
        :header-rows: 1
@@ -373,7 +372,7 @@ Practice Problems
 .. activecode:: get_order_totals_ac
         :autograde: unittest
         :nocodelens:
-        :openaicode:
+
 
         Write a function, ``get_order_totals()``, that takes a list of tuples and returns a nested dictionary with the same information. Each tuple includes 3 values; the first is the person's name, the second is item name, and the third is the quantity. 
         Note that there may be more than one tuple for the same person and item - your dictionary should total all the quantities for the same person and item.
@@ -448,8 +447,8 @@ Practice Problems
 
 .. fillintheblank:: reflect_4_oc
 
-    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
-        
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
+       
     .. list-table::
        :align: center
        :header-rows: 1
@@ -484,63 +483,8 @@ Practice Problems
         :.*:            Incorrect
 
 
-.. poll::  satisfication_oc
-    :allowcomment:
-    :option_1: Very, very low satisfaction
-    :option_2: Very low satisfaction
-    :option_3: Low satisfaction
-    :option_4: Rather low satisfaction
-    :option_5: Neither low nor high satisfaction
-    :option_6: Rather high satisfaction
-    :option_7: High satisfaction
-    :option_8: Very high satisfaction
-    :option_9: Very, very high satisfaction
-    :results: instructor
-
-    From 1-lowest to 9-highest, rate your level of **satisfaction** with the "Help" feature. Explain the reason for your choice in the comment box.
-
-
-.. poll::  confidence_oc
-    :allowcomment:
-    :option_1: Very, very low confidence
-    :option_2: Very low confidence
-    :option_3: Low confidence
-    :option_4: Rather low confidence
-    :option_5: Neither low nor high confidence
-    :option_6: Rather high confidence
-    :option_7: High confidence
-    :option_8: Very high confidence
-    :option_9: Very, very high confidence
-    :results: instructor
-
-    From 1-lowest to 9-highest, rate your level of **confidence** in your ability to solve a similar problem from scratch after the practice. Explain the reason for your choice in the comment box.
-
-
-.. poll::  closeness_oc
-    :allowcomment:
-    :option_1: Very, very low alignment
-    :option_2: Very low alignment
-    :option_3: Low alignment
-    :option_4: Rather low alignment
-    :option_5: Neither low nor high alignment
-    :option_6: Rather high alignment
-    :option_7: High alignment
-    :option_8: Very high alignment
-    :option_9: Very, very high alignment
-    :results: instructor
-
-
-    From 1-lowest to 9-highest, how closely do the solutions provided in the "Help" **align with** your initial idea for a solutions? Explain the reason for your choice in the comment box.
-
-
-.. shortanswer:: end_explain_oc
-   
-    If you did not use the “Help ” at all when solving the above practice problems, please explain why. Please skip this question if you used the "Help" at least once.
-
-
-
 What to do next
 ^^^^^^^^^^^^^^^^
 .. raw:: html
 
-    <p>Click on the following link to work on the post test: <a id="pps-posttest" href="pps-posttest.html"><font size="+1"><b>Posttest</b></font></a></p>
+    <p>Click on the following link to work on the post test: <a id="pps-end-survey" href="pps-end-survey.html"><font size="+1"><b>End of Practice Survey</b></font></a></p>

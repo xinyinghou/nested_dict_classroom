@@ -1,9 +1,9 @@
 Practice Problems
 =================
 
-* This exercise consists of four write-code problems with providing **completed code** as help.
+* This exercise includes four write-code problems with help that provided a **mixed-up code problem**.
 
-* These questions include a **"Help"** button under each problem description.
+* The Help can be triggered by clicking the **"Help"** button under each problem description.
 
 * Please answer these problems without any outside help, including AI tools like ChatGPT.
 
@@ -14,7 +14,6 @@ Practice Problems
 .. activecode:: table_reservation_ac
         :autograde: unittest
         :nocodelens:
-        :openaiparsons:
 
         Finish the function ``table_reservation(reservation_dict, guest_num)`` below:
             - It takes a nested dictionary ``reservation_dict`` representing a restaurant's current reservation situation for a day and a specific number of guests ``guest_num`` as input. 
@@ -93,7 +92,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_1_op
 
-    The following statements ask you about the usefulness of the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -133,7 +132,6 @@ Practice Problems
 .. activecode:: get_average_score_ac
         :autograde: unittest
         :nocodelens:
-        :openaiparsons:
         
         Finish the function ``get_average_score(student_information)`` below:
             - It takes a dictionary ``student_information`` representing student data, where the keys are student names, and the values are dictionaries containing information about the student, including their age and a list of courses they took and the grade for each course.
@@ -211,7 +209,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_2_op
 
-    The following statements ask you about the usefulness of the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -252,7 +250,6 @@ Practice Problems
 .. activecode:: get_vegetarian_menu_ac
         :autograde: unittest
         :nocodelens:
-        :openaiparsons:
 
         Finish the function ``get_vegetarian_menu(menu_items):`` below:
             - It takes a list of tuples ``menu_items`` as input, each tuple contains ``(name, category, price, is_vegetarian)``.
@@ -333,7 +330,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_3_op
 
-    The following statements ask you about the usefulness of the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -374,7 +371,7 @@ Practice Problems
 .. activecode:: get_order_totals_ac
         :autograde: unittest
         :nocodelens:
-        :openaiparsons:
+
 
 
         Write a function, ``get_order_totals()``, that takes a list of tuples and returns a nested dictionary with the same information. Each tuple includes 3 values; the first is the person's name, the second is item name, and the third is the quantity. 
@@ -449,7 +446,7 @@ Practice Problems
 
 .. fillintheblank:: reflect_4_op
 
-    The following statements ask you about the usefulness of the **"Help" feature**. It includes using the initial Help, view Help again and regenerate Help. For each statement, please use the following scale to indicate what is most true for you.
+    The following statements ask you about the usefulness with the **"Help" feature**. It includes using the initial Help button, view Help again button and regenerate Help button. For each statement, please use the following scale to indicate what is most true for you.
         
     .. list-table::
        :align: center
@@ -545,4 +542,4 @@ What to do next
 ^^^^^^^^^^^^^^^^
 .. raw:: html
 
-    <p>Click on the following link to work on the post test: <a id="pps-posttest" href="pps-posttest.html"><font size="+1"><b>Posttest</b></font></a></p>
+    <p>Click on the following link to work on the post test: <a id="pps-end-survey" href="pps-end-survey.html"><font size="+1"><b>End of Practice Survey</b></font></a></p>

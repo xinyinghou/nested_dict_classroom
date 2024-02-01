@@ -24,12 +24,9 @@ Introduction to the Help Feature
 
 🤗 Feel free to use it to help you solve the write-code practice problems!
 
-
-
 .. activecode::  str-mixed-example-oc
     :autograde: unittest
     :nocodelens:
-    :openaicode:
 
     Finish a function, ``phrase(person, thing)``:
         - It has ``person`` and ``thing`` as input.

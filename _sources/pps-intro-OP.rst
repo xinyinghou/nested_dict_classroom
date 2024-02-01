@@ -22,7 +22,6 @@ Introduction to the Help Feature
 .. activecode::  str-mixed-example-op
     :autograde: unittest
     :nocodelens:
-    :openaiparsons:
 
     Finish a function, ``phrase(person, thing)``:
         - It has ``person`` and ``thing`` as input.

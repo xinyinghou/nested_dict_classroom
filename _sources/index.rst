@@ -25,10 +25,10 @@ If you have questions about this study, please email Xinying Hou at xyhou@umich.
 
 The four parts are:
 
-- **Skill Assessment** - 3 self-evaluation survey questions and a 5-min timed assessment (2 MCQs + 1 short write-code problem).
+- **Skill Assessment** - 3 self-evaluation survey questions, 2 MCQs and 1 short answer question.
 - **Introduction to the Programming Help** - A brief overview of the new help feature designed to assist while writing code.
-- **Practice** - 4 Write-code practice problems to solve with the help feature, followed by survey questions.
-- **Posttest** - A 15-min timed assessment: Posttest problems to solve without the help feature.
+- **Practice** - Complete four write-code practice problems with available help, followed by survey questions.
+- **Posttest** - No help is available in the posttest. Includes 2 MCQs, 1 short answer, 1 mixed-up code, 2 fix-code, and 1 write-code problems.
 
 Click on the link at the end of each page to get to the next part.
 
