@@ -16,7 +16,7 @@ sys.path.append(os.getcwd())
 
 home_dir = os.getcwd()
 
-project_name = "class-exp2"
+project_name = "nested_dict"
 
 #master_url = None
 #if master_url is None:
@@ -36,7 +36,7 @@ if master_url is None:
     master_url = get_master_url()
 
 master_app = 'runestone'
-serving_dir = "./build/class-exp2"
+serving_dir = "./build/nested_dict"
 
 #new 7/2019 changes
 # Change to False when running localhost
@@ -56,9 +56,9 @@ options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/class-exp2",
+        builddir="./build/nested_dict",
         sourcedir="_sources",
-        outdir="./build/class-exp2",
+        outdir="./build/nested_dict",
         confdir=".",
         project_name=project_name,
         template_args={'course_id': project_name,
@@ -69,7 +69,7 @@ options(
                        'use_services': 'true',
                        'python3': 'true',
                        'dburl': 'postgresql://runestone@localhost/runestone',
-                       'basecourse': 'class-exp2',
+                       'basecourse': 'nested_dict',
                         # new 7/2019 changes
                        'dynamic_pages': dynamic_pages,
                        'downloads_enabled': 'false',
