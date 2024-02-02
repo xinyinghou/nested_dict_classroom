@@ -37,6 +37,9 @@ Introduction to the Help Feature
 🤗 Feel free to use it to help you solve the write-code practice problems!
 
 
+An Example of the Help Feature
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 .. activecode::  str-mixed-example-op
     :autograde: unittest
     :nocodelens:
