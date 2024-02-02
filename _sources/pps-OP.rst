@@ -11,7 +11,7 @@ Practice Problems
 
 
 
-.. activecode:: table_reservation_ac
+.. activecode:: table_reservation_op
         :autograde: unittest
         :nocodelens:
 
@@ -66,13 +66,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
 .. poll:: mental_poll_1_op
@@ -129,7 +129,7 @@ Practice Problems
 
 
 
-.. activecode:: get_average_score_ac
+.. activecode:: get_average_score_op
         :autograde: unittest
         :nocodelens:
         
@@ -183,13 +183,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box..
 
     
 .. poll:: mental_poll_2_op
@@ -247,7 +247,7 @@ Practice Problems
 
 
 
-.. activecode:: get_vegetarian_menu_ac
+.. activecode:: get_vegetarian_menu_op
         :autograde: unittest
         :nocodelens:
 
@@ -304,13 +304,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box..
 
     
 .. poll:: mental_poll_3_op
@@ -368,7 +368,7 @@ Practice Problems
 
 
 
-.. activecode:: get_order_totals_ac
+.. activecode:: get_order_totals_op
         :autograde: unittest
         :nocodelens:
 
@@ -420,13 +420,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
 .. poll:: mental_poll_4_op
@@ -480,62 +480,6 @@ Practice Problems
         :.*:            Incorrect
     -   :1.0 5.0:       Saved
         :.*:            Incorrect
-
-
-.. poll::  satisfication_op
-    :allowcomment:
-    :option_1: Very, very low satisfaction
-    :option_2: Very low satisfaction
-    :option_3: Low satisfaction
-    :option_4: Rather low satisfaction
-    :option_5: Neither low nor high satisfaction
-    :option_6: Rather high satisfaction
-    :option_7: High satisfaction
-    :option_8: Very high satisfaction
-    :option_9: Very, very high satisfaction
-    :results: instructor
-
-    From 1-lowest to 9-highest, rate your level of **satisfaction** with the "Help" feature. Explain the reason for your choice in the comment box.
-
-
-.. poll::  confidence_op
-    :allowcomment:
-    :option_1: Very, very low confidence
-    :option_2: Very low confidence
-    :option_3: Low confidence
-    :option_4: Rather low confidence
-    :option_5: Neither low nor high confidence
-    :option_6: Rather high confidence
-    :option_7: High confidence
-    :option_8: Very high confidence
-    :option_9: Very, very high confidence
-    :results: instructor
-
-    From 1-lowest to 9-highest, rate your level of **confidence** in your ability to solve a similar problem from scratch after the practice. Explain the reason for your choice in the comment box.
-
-
-.. poll::  closeness_op
-    :allowcomment:
-    :option_1: Very, very low alignment
-    :option_2: Very low alignment
-    :option_3: Low alignment
-    :option_4: Rather low alignment
-    :option_5: Neither low nor high alignment
-    :option_6: Rather high alignment
-    :option_7: High alignment
-    :option_8: Very high alignment
-    :option_9: Very, very high alignment
-    :results: instructor
-
-
-    From 1-lowest to 9-highest, how closely do the solutions provided in the "Help" **align with** your initial idea for a solutions? Explain the reason for your choice in the comment box.
-
-
-.. shortanswer:: end_explain_op
-   
-    If you did not use the “Help ” at all when solving the above practice problems, please explain why. Please skip this question if you used the "Help" at least once.
-
-
 
 
 What to do next

@@ -1,13 +1,11 @@
 Introduction to the Help Feature
 ================================
 
-💻  Pop-up a correct code to help you finish the write-code problem
----------------------------------------------------------------------
+💻  Pop-up a correct solution to help you finish the write-code problem
+-----------------------------------------------------------------------
 
 :Help:
-    You may see a problem that allows you to pop-up completed corret code for this write-code problem. 
-    
-    To see the completed code for this write-code problem, click the **"Help"** button below the problem description.
+    Click the **"Help"** button below the problem description to pop up completed corret code for this write-code problem. 
 
 :Close Help:
     By clicking the **"Close Help"** button, you can close the provided help.
@@ -17,6 +15,7 @@ Introduction to the Help Feature
 
 :🔁 Regenerate Help:
     By using the **🔁 Regenerate Help** button, you can generate different correct code for this write-code problem. 
+    
     You need to CHANGE your code to activate this Feature.
 
 :Copy Answer to Clipboard:

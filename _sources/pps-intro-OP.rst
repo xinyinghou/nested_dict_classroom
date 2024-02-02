@@ -4,16 +4,34 @@ Introduction to the Help Feature
 💻 Pop-up a mixed-up code problem to help you finish the write-code problem
 ----------------------------------------------------------------------------
 
-:Mixed-up Code Problem: 
-    * Movable Blocks:
-        - Move the correct blocks from the left box to the right box and put them into the correct order.
-    * Static Blocks: 
-        - The Static blocks are the blocks that are already in position in the right box. You can not move them.
-    * Paired Block Sets: 
-        - Sets of correct blocks with incorrect blocks that are unnecessary in a correct solution.
-        - These incorrect blocks may contain syntactic or semantic errors.
-        - Purple edges are used to pair the correct block and the incorrect block. 
-        - The correct code is randomly shown above or below the incorrect block.
+:Help:
+    Click the **"Help"** button below the problem description to pop up **a mixed-up code problem** for this write-code problem. 
+
+:Close Help:
+    By clicking the **"Close Help"** button, you can close the provided help.
+    
+:Check Help Again:
+    By clicking the **"View Help Again"** button, you can open to see the generated help again.
+
+:🔁 Regenerate Help:
+    By using the **🔁 Regenerate Help** button, you can generate different correct code for this write-code problem. 
+    
+    You need to CHANGE your code to activate this Feature.
+
+:Copy Answer to Clipboard:
+    You can use the **Copy Answer to Clipboard** button to copy the generated correct code to the clipboard and paste it in the write-code box.
+
+:Mixed-up Code Problem - Movable Blocks:
+    Move the correct blocks from the left box to the right box and put them into the correct order.
+
+:Mixed-up Code Problem - Static Blocks: 
+    The Static blocks are the blocks that are already in position in the right box. You can not move them.
+
+:Mixed-up Code Problem - Paired Block Sets: 
+    - Sets of correct blocks with incorrect blocks that are unnecessary in a correct solution.
+    - These incorrect blocks may contain syntactic or semantic errors.
+    - Purple edges are used to pair the correct block and the incorrect block. 
+    - The correct code is randomly shown above or below the incorrect block.
 
 
 🤗 Feel free to use it to help you solve the write-code practice problems!

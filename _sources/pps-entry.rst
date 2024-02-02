@@ -130,11 +130,10 @@ Please choose the option you think is the best answer for the following two ques
                     'second_level': {'C': {'g': 6},'D': {'h': 7, 'i': {'j': 8}}}}
         </code> 
     <br><br>
-    What is the correct way to access the value associated with the key <code>'f'<code> inside the nested dictionary?
+    What is the correct way to access the value associated with the key <code>'f'</code> inside the nested dictionary?
 
 
-.. shortanswer:: pretest-sa_3
-    :nocodelens:
+.. shortanswer:: pretest-sa-3
     
     Please write the code line that is missing below
 
@@ -147,7 +146,7 @@ Please choose the option you think is the best answer for the following two ques
 
         # Printing each employee's name along with their skills using a nested loop
         for name, details in employees.items():
-            # Write one code line that is missing here to print the employee's name, skill_type and skill_value
+            # Write one code line that is missing here to print the employee's name, skill_type and skill_expertise
                 print(f"{name}'s {skill_type_key}: {skill_expertise_value}")
         
         """ The output of the code above should be:
@@ -167,51 +166,62 @@ What to do next
 
    <script type="text/javascript">
 
-     function getCookie(cookieName) {
+    function getCookie(cookieName) {
         let name = cookieName + "=";
+        // console.log("name", name)
+        // console.log("Raw document.cookie:", document.cookie);
         let decodedCookie = decodeURIComponent(document.cookie);
+        // console.log("decodedCookie",decodedCookie)
         let ca = decodedCookie.split(';');
+        // console.log("ca",ca)
         for(let i = 0; i < ca.length; i++) {
-           let c = ca[i];
-           while (c.charAt(0) == ' ') {
-              c = c.substring(1);
-           }
-           if (c.indexOf(name) == 0) {
-              return c.substring(name.length, c.length);
-           }
+        let c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
         }
         return "";
-     }
+    }
 
-     function setCookie(cookieName, cvalue) {
+    function setCookie(cookieName, cvalue) {
         document.cookie = cookieName + "=" + cvalue + ";";
-     }
+    }
 
-     window.onload = function() {
+    window.onload = function() {
 
         a = document.getElementById("p3pps-intro")
 
         // get prev set cookie
+        // Example:
+        // console.log("Code is running");
+
+        var cond = getCookie(EXP_COOKIE);
+        // console.log("Condition from cookie: " + cond);
+
         var EXP_COOKIE = 'p3pps-exp'
         var cond = getCookie(EXP_COOKIE);
+        // console.log("Condition from cookie: " + cond);
 
         // if no prev set cookie: generate random condition and set cookie
         if (cond != 'acoc' && cond != 'acop') {
-           var v = Math.floor(Math.random() * 2);
-           if (v < 1) {
-               cond = 'acoc';
-           } else {
-               cond = 'acop';
-           }
-           setCookie(EXP_COOKIE, cond);
+        var v = Math.floor(Math.random() * 2);
+        if (v < 1) {
+            cond = 'acoc';
+        } else {
+            cond = 'acop';
+        }
+        setCookie(EXP_COOKIE, cond);
         }
 
         if (cond == 'acop') {
-           a.href = "pps-intro-OP.html"
+        a.href = "pps-intro-OP.html"
         } else if (cond == 'acoc') {
-           a.href = "pps-intro-OC.html"
+        a.href = "pps-intro-OC.html"
         }
-     };
+    };
    </script>
 
 

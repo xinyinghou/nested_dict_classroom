@@ -6,60 +6,58 @@ Posttest Problems
 * Again, you can stop working on a problem after you worked on it for about five minutes without solving it. 
 
 
-
 Please choose the option you think is the best answer for the following two questions.
 
 .. poll:: posttest-mcq-1
-    :option_1: <code>{'f': {'g': '456'}}</code>
-    :option_2: <code>{'c': {'f': {'g': '456'}}}</code>
+    :option_1: <code>{'F': {'N': '456'}}</code>
+    :option_2: <code>{'C': {'F': {'N': '456'}}}</code>
     :option_3: <code>'123'</code>
-    :option_4: <code>{'g': '456'}</code>
+    :option_4: <code>{'N': '456'}</code>
     :option_5: <code>'456'</code>
     :results: instructor
     
-    <code> nested_dict = {'a': {'b': {'e': '123'}, 'c': {'f': {'g': '456'}}}} </code> 
+    <code> nested_dict = {'A': {'B': {'M': '123'}, 'C': {'F': {'N': '456'}}}} </code> 
     <br><br>
-    What does <code>nested_dict['a']['c']['f']</code> return?
+    What does <code>nested_dict['A']['C']['F']</code> return?
 
 
 .. poll:: posttest-mcq-2
-    :option_1: <code>my_dict['first_level']['B']['d']['f']</code>
-    :option_2: <code>my_dict['first_level']['B']['f']</code>
-    :option_3: <code>my_dict['first_level']['B']['d'][1]</code>
-    :option_4: <code>my_dict['second_level']['D']['i']['f']</code>
-    :option_5: <code>my_dict['second_level']['D']['h']['f']</code>
+    :option_1: <code>nested_dict['level_one']['B']['d']['f']</code>
+    :option_2: <code>nested_dict['level_one']['B']['f']</code>
+    :option_3: <code>nested_dict['level_one']['B']['d'][1]</code>
+    :option_4: <code>nested_dict['level_two']['D']['i']['f']</code>
+    :option_5: <code>nested_dict['level_two']['D']['h']['f']</code>
     :results: instructor
     
         <code> 
-            my_dict = {'first_level': {'A': {'a': 1, 'b': 2},'B': {'c': 3, 'd': {'e': 4, 'f': 5}}},
-                    'second_level': {'C': {'g': 6},'D': {'h': 7, 'i': {'j': 8}}}}
+            nested_dict = {'level_one': {'A': {'a': 1, 'b': 2},'B': {'c': 3, 'd': {'e': 4, 'f': 5}}},
+                    'level_two': {'C': {'g': 6},'D': {'h': 7, 'i': {'j': 8}}}}
         </code> 
     <br><br>
-    What is the correct way to access the value associated with the key <code>'f'<code> inside the nested dictionary?
+    What is the correct way to access the value associated with the key <code>'f'</code> inside the nested dictionary?
 
 
-.. shortanswer:: posttest-sa_3
-    :nocodelens:
+.. shortanswer:: posttest-sa-3
     
     Please write the code line that is missing below
 
     .. code-block::
 
-        employees = {
-            'John': {'age': 28, 'position': 'Designer', 'skills': {'soft_skill': 'Creativity', 'technical_skill': 'Figma'}},
-            'Alice': {'age': 34, 'position': 'Developer', 'skills': {'soft_skill': 'Communication', 'technical_skill': 'Python'}}
+        bakery_team = {
+            'Mike': {'age': 45, 'position': 'Baker', 'skills': {'baking_skill': 'Artisan Bread', 'customer_service_skill': 'Friendly Interaction'}},
+            'Jane': {'age': 53, 'position': 'Pastry Chef', 'skills': {'baking_skill': 'French Pastries', 'customer_service_skill': 'Attention to Detail'}}
         }
 
         # Printing each employee's name along with their skills using a nested loop
-        for name, details in employees.items():
-            # Write one code line that is missing here to print the employee's name, skill_type and skill_value
-                print(f"{name}'s {skill_type_key}: {skill_expertise_value}")
+        for employee_name, employee_info in bakery_team.items():
+            # Write one code line that is missing here to print the employee_name, skill_type and skill_expertise
+                print(f"{employee_name} - {skill_type_key}: {skill_expertise_value}")
         
         """ The output of the code above should be:
-        John's soft_skill: Creativity
-        John's technical_skill: Figma
-        Alice's soft_skill: Communication
-        Alice's technical_skill: Python
+        Mike - baking_skill: Artisan Bread
+        Mike - customer_service_skill: Friendly Interaction
+        Jane - baking_skill: French Pastries
+        Jane - customer_service_skill: Attention to Detail
         """
 
 
@@ -166,7 +164,60 @@ Please choose the option you think is the best answer for the following two ques
 
     myTests().main() 
 
-    
+
+.. activecode:: count_silver_customer_fix
+        :autograde: unittest
+        :nocodelens:
+
+        Fix the function ``count_customer(orders_dict, target_times)`` below:
+            - ``orders_dict`` is a nested dictionary representing the one-month order history of members in a restaurant system. The outer keys are ``zipcodes`` (e.g., ``"48104"``, ``"48106"``). The values are lists of dictionaries, each containing a unique member ``ID`` (e.g., ``"G01"``, ``"G02"``) as inner keys and the number of times they ordered in the past month as values.
+            - ``target_times`` is an integer representing a specific monthly order count for silver customers.
+            - The function should return the total number of customers across different ``zipcodes`` in ``orders_dict`` whose order count for the last month is exactly equal to the specified ``target_times``.
+
+        .. table::
+            :name: count_silver_customer_table
+            :align: left
+            :width: 50
+
+            +---------------------------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------------------+
+            | Example Input                                                                                                                               | Expected Output  | Explanation                                                           |
+            +=============================================================================================================================================+==================+=======================================================================+
+            |``count_customer({"48104": [{"G01": 3}, {"G02": 4}], "48198": [{"G03": 2}, {"G04": 4}]}, 4)``                                                | ``2``            | The target_times is 4, "G02" and "G04" has 4 orders, so result is 2   |
+            +---------------------------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------------------+
+            |``count_customer({"48104": [{"G01": 2}], "48198": [{"G02": 2}, {"G03": 4}], "48106": [{"G04": 2}], "48103": [{"G05": 2}, {"G06": 8}]}, 2)``  | ``4``            |                                                                       |
+            +---------------------------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------------------+
+            |``count_customer({"48104": [{"G01": 1}], "48198": [{"G02": 2}, {"G03": 4}], "48106": [{"G04": 6}], "48103": [{"G05": 2}, {"G06": 8}]}, 6)``  | ``1``            |                                                                       |
+            +---------------------------------------------------------------------------------------------------------------------------------------------+------------------+-----------------------------------------------------------------------+
+
+        ~~~~
+
+        def count_silver_customer(orders_dict, target_times):
+            total = 0
+            for location in orders_dict.items:
+                for order in order_lst[location]:
+                    for location in order:
+                        if order[location] == target_times:
+                            total = 1
+            return total
+
+
+
+        ====
+
+        from unittest.gui import TestCaseGui
+
+        class myTests(TestCaseGui):
+
+            def testOne(self):
+                self.assertEqual(count_silver_customer({"48104": [{"G01": 3}, {"G02": 4}], "48198": [{"G03": 2}, {"G04": 4}], "48106": [{"G05": 6}], "48103": [{"G06": 2}, {"G07": 8}]}, 4), 2)
+                self.assertEqual(count_silver_customer({"48104": [{"G01": 2}, {"G02": 4}], "48198": [{"G03": 2}, {"G04": 2}], "48106": [{"G05": 6}], "48103": [{"G06": 2}, {"G07": 8}]}, 2), 4)
+                self.assertEqual(count_silver_customer({"48104": [{"G01": 2}, {"G02": 4}], "48198": [{"G03": 2}, {"G04": 2}], "48106": [{"G05": 6}], "48103": [{"G06": 2}, {"G07": 8}]}, 10), 0)
+                self.assertEqual(count_silver_customer({"48104": [{"G01": 1}, {"G02": 4}]}, 1), 1)
+                self.assertEqual(count_silver_customer({"48104": [{"G01": 1}, {"G02": 4}], "48198": [{"G01": 1}, {"G02": 4}]}, 1), 2)
+                self.assertEqual(count_silver_customer({"48104": [{"G02": 4}]}, 9), 0)
+
+        myTests().main()
+
 
 .. activecode:: happy_hour_specials_ac
     :autograde: unittest

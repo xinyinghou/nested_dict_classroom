@@ -10,7 +10,7 @@ Practice Problems
 * You can stop working on a problem after you worked on it for about five minutes without solving it.
 
 
-.. activecode:: table_reservation_ac
+.. activecode:: table_reservation_oc
         :autograde: unittest
         :nocodelens:
 
@@ -65,13 +65,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
 .. poll:: mental_poll_1_oc
@@ -128,7 +128,7 @@ Practice Problems
 
 
 
-.. activecode:: get_average_score_ac
+.. activecode:: get_average_score_oc
         :autograde: unittest
         :nocodelens:
 
@@ -183,13 +183,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
 .. poll:: mental_poll_2_oc
@@ -247,7 +247,7 @@ Practice Problems
 
 
 
-.. activecode:: get_vegetarian_menu_ac
+.. activecode:: get_vegetarian_menu_oc
         :autograde: unittest
         :nocodelens:
 
@@ -305,13 +305,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
     
@@ -369,7 +369,7 @@ Practice Problems
 
 
 
-.. activecode:: get_order_totals_ac
+.. activecode:: get_order_totals_oc
         :autograde: unittest
         :nocodelens:
 
@@ -420,13 +420,13 @@ Practice Problems
     :allowcomment:
     :option_1: I didn't use it.
     :option_2: I wanted to get an idea about how to start solving the problem.
-    :option_3: I wasn't stuck, but I wanted to check something I wasn't sure about when writing the code.
+    :option_3: I wasn't stuck, but I wanted to check something I was uncertain about.
     :option_4: I wanted to know what to do next because I was stuck.
-    :option_5: I finished writing the code, but it did not pass all the unit tests, so I wanted to figure out what went wrong.
+    :option_5: The code I wrote didn't pass all unit tests, so I want to figure out what went wrong. .
     :option_6: None of the above.
     :results: instructor
 
-    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment (Option 2- 6). If you did not use the "Help", select Option 1.
+    How did you use the "Help" to solve the preceding problem? Please select the option that best describes your situation. Please explain it in detail in the comment box.
 
     
     

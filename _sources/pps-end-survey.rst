@@ -14,7 +14,7 @@ End of Practice Survey
     :option_9: Very, very high satisfaction
     :results: instructor
 
-    From 1-lowest to 9-highest, rate your level of **satisfaction** with the "Help" feature. Explain the reason for your choice in the comment box.
+    From 1-lowest to 9-highest, rate your level of <b>satisfaction</b> with the "Help" feature. Explain the reason for your choice in the comment box.
 
 
 .. poll::  confidence
@@ -30,7 +30,7 @@ End of Practice Survey
     :option_9: Very, very high confidence
     :results: instructor
 
-    From 1-lowest to 9-highest, rate your level of **confidence** in your ability to solve a similar problem from scratch after the practice. Explain the reason for your choice in the comment box.
+    From 1-lowest to 9-highest, rate your level of <b>confidence</b> in your ability to solve a similar problem from scratch after the practice. Explain the reason for your choice in the comment box.
 
 
 .. poll::  closeness
@@ -47,13 +47,12 @@ End of Practice Survey
     :results: instructor
 
 
-    From 1-lowest to 9-highest, how closely do the solutions provided in the "Help" **align with** your initial idea for a solutions? Explain the reason for your choice in the comment box.
+    From 1-lowest to 9-highest, how closely do the solutions provided in the "Help" <b>align with</b> your initial idea for a solutions? Explain the reason for your choice in the comment box.
 
 
 .. shortanswer:: end_explain
    
     If you did not use the “Help ” at all when solving the above practice problems, please explain why. Please skip this question if you used the "Help" at least once.
-
 
 
 
