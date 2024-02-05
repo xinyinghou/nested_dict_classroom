@@ -52,7 +52,7 @@ End of Practice Survey
 
 .. shortanswer:: end_explain
    
-    If you did not use the “Help ” at all when solving the above practice problems, please explain why. Please skip this question if you used the "Help" at least once.
+    If you did not use the “Help” at all when solving the above practice problems, please explain why. Please skip this question if you used the "Help" at least once.
 
 
 

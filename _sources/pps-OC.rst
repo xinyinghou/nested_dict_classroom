@@ -9,6 +9,7 @@ Practice Problems
 
 * You can stop working on a problem after you worked on it for about five minutes without solving it.
 
+* Remember to click "Save&Run", "Check me" or "Save" to save your answers.
 
 .. activecode:: table_reservation_oc
         :autograde: unittest
@@ -136,7 +137,7 @@ Practice Problems
         Finish the function ``get_average_score(student_information)`` below:
             - It takes a dictionary ``student_information`` representing student data, where the keys are student names, and the values are dictionaries containing information about the student, including their age and a list of courses they took and the grade for each course.
             - You then need to calculate the average grade for each student.
-            - Return a dictionary that stores the students whose average grade is higher than or equal to ``80`` in a dictionary. The keys are student names and the values are their average grade.
+            - Return a dictionary that stores the students whose average grade is **higher than or equal to** ``80`` in a dictionary. The keys are student names and the values are their average grade.
 
         .. table::
             :name: item_quantity_table
@@ -374,7 +375,7 @@ Practice Problems
         :nocodelens:
 
 
-        Write a function, ``get_order_totals()``, that takes a list of tuples and returns a nested dictionary with the same information. Each tuple includes 3 values; the first is the person's name, the second is item name, and the third is the quantity. 
+        Write a function, ``get_order_totals(orders)``, that takes a list of tuples and returns a nested dictionary with the same information. Each tuple contains ``(name, item, quantity)``.
         Note that there may be more than one tuple for the same person and item - your dictionary should total all the quantities for the same person and item.
      
         .. table::

@@ -44,13 +44,17 @@ Please choose the option you think is the best answer for the following two ques
     .. code-block::
 
         bakery_team = {
-            'Mike': {'age': 45, 'position': 'Baker', 'skills': {'baking_skill': 'Artisan Bread', 'customer_service_skill': 'Friendly Interaction'}},
-            'Jane': {'age': 53, 'position': 'Pastry Chef', 'skills': {'baking_skill': 'French Pastries', 'customer_service_skill': 'Attention to Detail'}}
+            'Mike': {'age': 45, 'position': 'Baker', 
+                    'skills': {'baking_skill': 'Artisan Bread', 'customer_service_skill': 'Friendly Interaction'}},
+            'Jane': {'age': 53, 'position': 'Pastry Chef', 
+                    'skills': {'baking_skill': 'French Pastries', 'customer_service_skill': 'Attention to Detail'}}
         }
 
         # Printing each employee's name along with their skills using a nested loop
         for employee_name, employee_info in bakery_team.items():
+            ###### write the line below #####
             # Write one code line that is missing here to print the employee_name, skill_type and skill_expertise
+            ###### write the line above #####
                 print(f"{employee_name} - {skill_type_key}: {skill_expertise_value}")
         
         """ The output of the code above should be:
@@ -219,55 +223,54 @@ Please choose the option you think is the best answer for the following two ques
         myTests().main()
 
 
-.. activecode:: happy_hour_specials_ac
-    :autograde: unittest
-    :nocodelens:
+.. activecode:: happy_hour_specials_ac_post
+        :autograde: unittest
+        :nocodelens:
 
-    Write the function ``happy_hour_specials(menu_items)``:
-        - ``menu_items`` is a list of tuples. Each tuple contains ``(name, category, is_today_special, price)``.
-        - Return a nested dictionary that only includes the items marked as today's special (``is_today_special`` is ``True``) and where the prices are less than or equal to ``15``. Each outer key is the ``category`` and each value is a dictionary. The inner dictionary keys are ``name``, and the values are ``price``.
+        Write the function ``happy_hour_specials(menu_items)``:
+            - ``menu_items`` is a list of tuples. Each tuple contains ``(name, category, is_today_special, price)``.
+            - Return a nested dictionary that only includes the items marked as today's special (``is_today_special`` is ``True``) and where the prices are less than or equal to ``15``. Each outer key is the ``category`` and each value is a dictionary. The inner dictionary keys are ``name``, and the values are ``price``.
 
-    .. table::
-        :name: today_specical_table
-        :align: left
-        :width: 40
+        .. table::
+            :name: today_specical_table
+            :align: left
+            :width: 40
 
-        +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-        | Example Input                                                                                                                                                      | Expected Output                                                            |
-        +====================================================================================================================================================================+============================================================================+
-        |``happy_hour_specials([("Margherita", "Pizza", True, 15), ("Pepperoni", "Pizza", False, 22), ("Hawaiian", "Pizza", True, 10), ("Caesar", "Salad", True, 10)])``     | ``{"Pizza": {"Margherita": 15, "Hawaiian": 10}, "Salad": {"Caesar": 10}}`` |                 
-        +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-        |``happy_hour_specials([("Margherita", "Pizza", True, 15), ("Pepperoni", "Pizza", False, 22), ("Olive-Walnut", "Pasta", True, 20), ("Caesar", "Salad", True, 10)])`` | ``{"Pizza": {"Margherita": 15}, "Salad": {"Caesar": 10}}``                 |                                                       
-        +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
-        |``happy_hour_specials([("Lentil", "Soup", True, 15), ("Salmorejo", "Soup", False, 18), ("Harvest", "Salad", False, 18), ("Fruit", "Salad", True, 8)])``             | ``{"Soup": {"Lentil": 15}, "Salad": {"Fruit": 8}}``                        |
-        +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+     
-
-
-    ~~~~
-    def happy_hour_specials(new_menu_items):
+            +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+            | Example Input                                                                                                                                                      | Expected Output                                                            |
+            +====================================================================================================================================================================+============================================================================+
+            |``happy_hour_specials([("Margherita", "Pizza", True, 15), ("Pepperoni", "Pizza", False, 22), ("Hawaiian", "Pizza", True, 10), ("Caesar", "Salad", True, 10)])``     | ``{"Pizza": {"Margherita": 15, "Hawaiian": 10}, "Salad": {"Caesar": 10}}`` |                 
+            +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+            |``happy_hour_specials([("Margherita", "Pizza", True, 15), ("Pepperoni", "Pizza", False, 22), ("Olive-Walnut", "Pasta", True, 20), ("Caesar", "Salad", True, 10)])`` | ``{"Pizza": {"Margherita": 15}, "Salad": {"Caesar": 10}}``                 |                                                       
+            +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+
+            |``happy_hour_specials([("Lentil", "Soup", True, 15), ("Salmorejo", "Soup", False, 18), ("Harvest", "Salad", False, 18), ("Fruit", "Salad", True, 8)])``             | ``{"Soup": {"Lentil": 15}, "Salad": {"Fruit": 8}}``                        |
+            +--------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------+     
 
 
+        ~~~~
+        def happy_hour_specials(new_menu_items):
 
 
 
 
 
 
-    ====
-        
-    from unittest.gui import TestCaseGui
 
-    class myTests(TestCaseGui):
 
-        def testOne(self):
+        ====
+            
+        from unittest.gui import TestCaseGui
 
-            self.assertEqual(happy_hour_specials([("Classic", "Burger", True, 12), ("Veggie", "Burger", True, 14), ("Fish", "Burger", True, 16), ("Cheese", "Pizza", False, 20)]), {"Burger": {"Classic": 12, "Veggie": 14}})
-            self.assertEqual(happy_hour_specials([("Mango", "Smoothie", True, 8), ("Green", "Smoothie", True, 12), ("Chocolate", "Milkshake", True, 15), ("Vanilla", "Milkshake", False, 18)]), {"Smoothie": {"Mango": 8, "Green": 12}})
-            self.assertEqual(happy_hour_specials([("Spaghetti", "Pasta", True, 10), ("Alfredo", "Pasta", True, 12), ("Bolognese", "Pasta", True, 14), ("Seafood", "Pasta", True, 18)]), {"Pasta": {"Spaghetti": 10, "Alfredo": 12, "Bolognese": 14}})
-            self.assertEqual(happy_hour_specials([("Fruit", "Salad", True, 8), ("Greek", "Salad", True, 12), ("Caesar", "Salad", True, 14), ("Chicken", "Salad", False, 18)]), {"Salad": {"Fruit": 8, "Greek": 12, "Caesar": 14}})
+        class myTests(TestCaseGui):
 
-    myTests().main()
+            def testOne(self):
 
+                self.assertEqual(happy_hour_specials([("Classic", "Burger", True, 12), ("Veggie", "Burger", True, 14), ("Fish", "Burger", True, 16), ("Cheese", "Pizza", False, 20)]), {"Burger": {"Classic": 12, "Veggie": 14}})
+                self.assertEqual(happy_hour_specials([("Mango", "Smoothie", True, 8), ("Green", "Smoothie", True, 12), ("Chocolate", "Milkshake", False, 15), ("Vanilla", "Milkshake", False, 18)]), {"Smoothie": {"Mango": 8, "Green": 12}})
+                self.assertEqual(happy_hour_specials([("Spaghetti", "Pasta", True, 10), ("Alfredo", "Pasta", True, 12), ("Bolognese", "Pasta", False, 14), ("Seafood", "Pasta", True, 18)]), {"Pasta": {"Spaghetti": 10, "Alfredo": 12}})
+                self.assertEqual(happy_hour_specials([("Margherita", "Pizza", True, 15), ("Pepperoni", "Pizza", False, 22), ("Hawaiian", "Pizza", True, 10), ("Caesar", "Salad", True, 10)]), {"Pizza": {"Margherita": 15, "Hawaiian": 10}, "Salad": {"Caesar": 10}})
+
+        myTests().main()
 
 
 

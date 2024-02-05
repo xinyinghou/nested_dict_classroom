@@ -140,13 +140,17 @@ Please choose the option you think is the best answer for the following two ques
     .. code-block::
 
         employees = {
-            'John': {'age': 28, 'position': 'Designer', 'skills': {'soft_skill': 'Creativity', 'technical_skill': 'Figma'}},
-            'Alice': {'age': 34, 'position': 'Developer', 'skills': {'soft_skill': 'Communication', 'technical_skill': 'Python'}}
+            'John': {'age': 28, 'position': 'Designer', 
+                    'skills': {'soft_skill': 'Creativity', 'technical_skill': 'Figma'}},
+            'Alice': {'age': 34, 'position': 'Developer', 
+                    'skills': {'soft_skill': 'Communication', 'technical_skill': 'Python'}}
         }
 
         # Printing each employee's name along with their skills using a nested loop
         for name, details in employees.items():
+            ###### write the line below #####
             # Write one code line that is missing here to print the employee's name, skill_type and skill_expertise
+            ###### write the line above #####
                 print(f"{name}'s {skill_type_key}: {skill_expertise_value}")
         
         """ The output of the code above should be:
@@ -201,7 +205,7 @@ What to do next
         var cond = getCookie(EXP_COOKIE);
         // console.log("Condition from cookie: " + cond);
 
-        var EXP_COOKIE = 'p3pps-exp'
+        var EXP_COOKIE = 'p3pps-exp-feb08'
         var cond = getCookie(EXP_COOKIE);
         // console.log("Condition from cookie: " + cond);
 
